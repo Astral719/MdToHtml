@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name": "md-to-html-converter",
   "description": "将Markdown文件转换为HTML的工具",
-  "homepage": "https://github.com/你的用户名/md-to-html-converter",
+  "homepage": "https://github.com/Astral719/MdToHtml",
   "auth": {
     "type": "none"
   },
