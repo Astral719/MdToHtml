@@ -1,0 +1,25 @@
+{
+  "name": "md-to-html-converter",
+  "version": "1.0.0",
+  "description": "一个简单的Markdown转HTML工具",
+  "main": "index.js",
+  "bin": {
+    "md-to-html": "./bin/md-to-html.js",
+    "md-to-html-mcp": "./bin/mcp-service.js"
+  },
+  "scripts": {
+    "start": "node ./bin/md-to-html.js",
+    "postinstall": "node -e \"try { require('fs').chmodSync('./bin/md-to-html.js', '0755'); require('fs').chmodSync('./bin/mcp-service.js', '0755'); } catch(e) { console.log('权限设置失败，可能在Windows下运行'); }\""
+  },
+  "keywords": ["markdown", "html", "converter", "md", "md-to-html", "mcp", "mcp-service"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^4.3.0",
+    "fs-extra": "^11.1.1",
+    "commander": "^10.0.1",
+    "chalk": "^4.1.2",
+    "glob": "^10.2.2",
+    "chokidar": "^3.5.3"
+  }
+} 

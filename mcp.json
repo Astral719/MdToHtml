@@ -1,0 +1,66 @@
+{
+  "schema_version": "v1",
+  "name": "md-to-html-converter",
+  "description": "将Markdown文件转换为HTML的工具",
+  "homepage": "https://github.com/你的用户名/md-to-html-converter",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "stdio",
+    "command": {
+      "command": "npx",
+      "args": ["md-to-html-mcp"]
+    }
+  },
+  "parameters": [
+    {
+      "name": "input",
+      "type": "string",
+      "description": "输入的Markdown文件或目录路径",
+      "required": true
+    },
+    {
+      "name": "output",
+      "type": "string",
+      "description": "输出的HTML文件或目录路径"
+    },
+    {
+      "name": "template",
+      "type": "string",
+      "description": "自定义HTML模板路径"
+    },
+    {
+      "name": "style",
+      "type": "string",
+      "description": "自定义CSS样式路径"
+    },
+    {
+      "name": "recursive",
+      "type": "boolean",
+      "description": "是否递归处理目录中的所有.md文件",
+      "default": false
+    },
+    {
+      "name": "watch",
+      "type": "boolean",
+      "description": "是否监听文件变化并自动转换",
+      "default": false
+    }
+  ],
+  "example_inputs": [
+    {
+      "input": "example/sample.md"
+    },
+    {
+      "input": "docs",
+      "output": "dist",
+      "recursive": true
+    },
+    {
+      "input": "README.md",
+      "template": "custom-template.html",
+      "style": "custom-style.css"
+    }
+  ]
+} 

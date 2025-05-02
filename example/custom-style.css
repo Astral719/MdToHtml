@@ -1,0 +1,80 @@
+/* 自定义样式示例 */
+
+/* 修改正文字体和颜色 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* 自定义标题颜色 */
+h1 {
+  color: #d32f2f;
+}
+
+h2 {
+  color: #c2185b;
+}
+
+h3 {
+  color: #7b1fa2;
+}
+
+/* 自定义链接样式 */
+a {
+  color: #1976d2;
+  border-bottom: 1px dashed #1976d2;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #d32f2f;
+  border-bottom: 1px solid #d32f2f;
+}
+
+/* 自定义代码块样式 */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  color: #d32f2f;
+}
+
+/* 自定义引用样式 */
+blockquote {
+  background-color: #e3f2fd;
+  border-left: 5px solid #2196f3;
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+/* 自定义表格样式 */
+table {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #1976d2;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* 自定义图片样式 */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.02);
+} 
